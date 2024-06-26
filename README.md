@@ -21,7 +21,7 @@ The CPU is designed with a 5-stage pipeline comprising:
 
 ## Instruction Set Architecture
 
-We implement instructions from the RV32I Base Integer Instruction Set, which are all 32 bits in length and aligned on a four-byte boundary in memory. Our base ISA includes three instruction formats: R-type, I-type, and S-type, as of now.
+We implement some of the basic instructions from the RV32I Base Integer Instruction Set, which are all 32 bits in length and aligned on a four-byte boundary in memory. Our base ISA includes three instruction formats: R-type, I-type, and S-type, as of now.
 
 ### Instruction Formats
 
@@ -37,7 +37,7 @@ We implement instructions from the RV32I Base Integer Instruction Set, which are
 
 - **S-type**:
   ```
-  0000 (unused) | funct7 [27:25] | rs2 [24:20] | rs1 [19:15] | funct3 [14:12] | immediate [11:7] | opcode [6:0]
+  0000 (unused) | immediate [27:25] | rs2 [24:20] | rs1 [19:15] | funct3 [14:12] | immediate [11:7] | opcode [6:0]
   ```
 
 ## Memory Architecture
@@ -49,7 +49,7 @@ The microprocessor employs the Harvard architecture, which features separate mem
 - **Address Space**: 64x8
 - **Word Size**: 8-bit
 - **Byte Ordering**: Little-endian (commercially dominant; used in x86 systems, iOS, Android, and Windows for ARM)
-- **Instruction Storage**: Each instruction is stored in 4 registers.
+- **Instruction Storage**: Each instruction is stored in 4 consecutive registers.
 
 ### Data Memory
 
@@ -70,4 +70,4 @@ The control unit generates control signals based on the opcode. It is divided in
 
 This structured design leverages the RISC architecture's advantages, ensuring efficient and reliable operation of the microprocessor.
 
-In future, we will try to implement branch and jump instructions with hazard dectection and forwarding unit features.
+In the future, we will implement branch and jump instructions along with pipelining, hazard detection and forwarding unit features in our processor design. These enhancements aim to optimize instruction execution by effectively managing data dependencies and minimizing pipeline stalls, thereby improving overall processor performance and efficiency.
