@@ -91,4 +91,4 @@ In this 5 stage pipeline,there are 4 pipeline registers namely
 
 This structured design leverages the RISC architecture's advantages, ensuring efficient and reliable operation of the microprocessor.
 
-In the future, we will implement branch and jump instructions along with pipelining, hazard detection and forwarding unit features in our processor design. These enhancements aim to optimize instruction execution by effectively managing data dependencies and minimizing pipeline stalls, thereby improving overall processor performance and efficiency.
+In the future, we will implement branch and jump instructions along with hazard detection and forwarding unit features in our processor design. These enhancements aim to optimize instruction execution by effectively managing data dependencies and minimizing pipeline stalls, thereby improving overall processor performance and efficiency.
