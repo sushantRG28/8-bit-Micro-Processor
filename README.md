@@ -80,7 +80,7 @@ The ALU currently supports 7 operations
 6. **Logical Left Shift**
 7. **Logical Right Shift**
 
-   ## Pipelining
+## Pipelining
 
 In this 5 stage pipeline,there are 4 pipeline registers namely
 
