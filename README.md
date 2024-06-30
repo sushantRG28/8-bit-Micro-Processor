@@ -68,6 +68,27 @@ The control unit generates control signals based on the opcode. It is divided in
 1. **Main Control Unit**: Manages control signals for the data memory, register file, and various multiplexers.
 2. **ALU Control Unit**: Receives signals from both the main control unit and the instruction to generate appropriate signals for the ALU.
 
+## Arithmetic Logic Unit
+
+The ALU currently supports 7 operations
+
+1. **Addition**
+2. **Subtraction**
+3. **AND**
+4. **OR**
+5. **XOR**
+6. **Logical Left Shift**
+7. **Logical Right Shift**
+
+   ## Pipelining
+
+In this 5 stage pipeline,there are 4 pipeline registers namely
+
+1. **IF_ID**
+2. **ID_Ex**
+3. **Ex_Mem**
+4. **Mem_Wb**
+
 This structured design leverages the RISC architecture's advantages, ensuring efficient and reliable operation of the microprocessor.
 
 In the future, we will implement branch and jump instructions along with pipelining, hazard detection and forwarding unit features in our processor design. These enhancements aim to optimize instruction execution by effectively managing data dependencies and minimizing pipeline stalls, thereby improving overall processor performance and efficiency.
