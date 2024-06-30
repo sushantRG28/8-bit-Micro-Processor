@@ -32,7 +32,7 @@ We implement some of the basic instructions from the RV32I Base Integer Instruct
 
 - **I-type**:
   ```
-  immediate [31:24] | 00000 (unused) | rs1 [19:15] | funct3 [14:12] | rd [11:7] | opcode [6:0]
+  immediate [31:24] | 0000 (unused) | rs1 [19:15] | funct3 [14:12] | rd [11:7] | opcode [6:0]
   ```
 
 - **S-type**:
