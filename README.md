@@ -7,7 +7,7 @@ In digital computing, various instruction set architectures (ISAs) exist, includ
 - **VLIW** (Very Long Instruction Word)
 - **EPIC** (Explicitly Parallel Instruction Computing)
 
-For our microprocessor design, we have chosen the RISC architecture due to its simplicity, efficiency, and adaptability.
+we chose the RISC architecture for our microprocessor due to its simplicity, efficiency, and adaptability.
 
 ## CPU Stages
 
