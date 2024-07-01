@@ -68,9 +68,6 @@ The control unit generates control signals based on the opcode. It is divided in
 1. **Main Control Unit**: Manages control signals for the data memory, register file, and various multiplexers.
 2. **ALU Control Unit**: Receives signals from both the main control unit and the instruction to generate appropriate signals for the ALU.
 
-## Currently Supported Instructions
-
-Sure, here's a more organized and visually appealing list of the currently supported instructions:
 
 ## Currently Supported Instructions
 
