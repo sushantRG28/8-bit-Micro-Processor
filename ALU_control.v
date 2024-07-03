@@ -45,9 +45,7 @@ module ALU_control(funct3,funct7,Op,ALUOp);
           3'b011: ALUOp = 4'b0111; //SLTi
             default: ALUOp = 4'b1111; // Default 
          
-         //that can be added
-         // arithmetic right shift
-         //
+      
          endcase
          
          
