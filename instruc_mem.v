@@ -17,21 +17,21 @@ module instruc_mem(input [7:0] inst_address,
     {inst_mem[27], inst_mem[26], inst_mem[25], inst_mem[24]} = 32'b00111100000000000000010110010011 ;   //LI x11, 60
     {inst_mem[31], inst_mem[30], inst_mem[29], inst_mem[28]} = 32'b01000110000000000000011000010011 ;   //LI x12, 70
 
-    // Performing Operation
+        // Performing Operation(I)
     {inst_mem[35], inst_mem[34], inst_mem[33], inst_mem[32]} = 32'b00000101000010111000101100010011  ; // ADDI x22, x23, 5
     {inst_mem[39], inst_mem[38], inst_mem[37], inst_mem[36]} = 32'b00000100000000101101110010010011  ; // LRSI x25, x5, 4 : 20(10100) shifted right by 4
     {inst_mem[43], inst_mem[42], inst_mem[41], inst_mem[40]} = 32'b00000011000000101001110000010011  ; // LLSI x24, x5, 3 : 20(10100) shifter left 3 times
     {inst_mem[47], inst_mem[46], inst_mem[45], inst_mem[44]} = 32'b00000101000000110100110100010011  ; // XORI x22, x6, 5 : 30(11110) xored with 5(00101)
     {inst_mem[51], inst_mem[50], inst_mem[49], inst_mem[48]} = 32'b00000000101101100011011010110011   ; // SLT x13, x12, x11
     
-    
-//    {inst_mem[35], inst_mem[34], inst_mem[33], inst_mem[32]} = 32'b00000000001000001000000110110011   ; // ADD x3, x1, x2
-//    {inst_mem[39], inst_mem[38], inst_mem[37], inst_mem[36]} = 32'b00000000011000101111001000110011   ; // AND x4, x5, x6
-//    {inst_mem[43], inst_mem[42], inst_mem[41], inst_mem[40]} = 32'b00000000100101000110001110110011   ; // OR x7, x8, x9
-//    {inst_mem[47], inst_mem[46], inst_mem[45], inst_mem[44]} = 32'b00000000110001011100010100110011   ; // XOR x10, x11, x12
-//    {inst_mem[51], inst_mem[50], inst_mem[49], inst_mem[48]} = 32'b00000000111101110001011010110011   ; // SLL x13, x14, x15
-//    {inst_mem[55], inst_mem[54], inst_mem[53], inst_mem[52]} = 32'b00000001001010001101100000110011   ; // SRL x16, x17, x18
-//    {inst_mem[59], inst_mem[58], inst_mem[57], inst_mem[56]} = 32'b00000101000010111000101100010011  ; // ADDI x22, x23, 5
+    //for R instructions
+        {inst_mem[55], inst_mem[54], inst_mem[53], inst_mem[52]} = 32'b00000000001000001000000110110011   ; // ADD x3, x1, x2
+        {inst_mem[59], inst_mem[58], inst_mem[57], inst_mem[56]} = 32'b00000000011000101111001000110011   ; // AND x4, x5, x6
+        {inst_mem[63], inst_mem[62], inst_mem[61], inst_mem[60]} = 32'b00000000100101000110001110110011   ; // OR x7, x8, x9
+        {inst_mem[67], inst_mem[66], inst_mem[65], inst_mem[64]} = 32'b00000000110001011100010100110011   ; // XOR x10, x11, x12
+        {inst_mem[71], inst_mem[70], inst_mem[69], inst_mem[68]} = 32'b00000000111101110001011010110011   ; // SLL x13, x14, x15
+        {inst_mem[75], inst_mem[74], inst_mem[73], inst_mem[72]} = 32'b00000001001010001101100000110011   ; // SRL x16, x17, x18
+        {inst_mem[79], inst_mem[78], inst_mem[77], inst_mem[76]} = 32'b00000101000010111000101100010011  ; // ADDI x22, x23, 5
 
 
         end
