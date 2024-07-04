@@ -44,7 +44,7 @@ module control_unit(
       regwrite = 1'b1;
       aluSrc = 1'b1;
       memwrite = 1'b0;
-      Aluop = 2'b00;
+      Aluop = 2'b11;
     end
     else // default case
     begin
