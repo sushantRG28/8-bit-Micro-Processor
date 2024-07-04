@@ -137,7 +137,7 @@ mux read(memwb_readdata,memwb_result_alu,memwb_memtoreg,
         clk = 0;
         reset = 1;
         #6 reset=0;
-        #200 $finish;
+        #300 $finish;
     end
 
     // Monitor the signals
