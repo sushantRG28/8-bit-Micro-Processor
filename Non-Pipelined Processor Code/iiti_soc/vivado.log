@@ -1,0 +1,365 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul 27 20:34:38 2024
+# Process ID: 38924
+# Current directory: D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39796 D:\IITI SOc\non-pipelined microprocessor code.xpr\iiti_soc\iiti_soc.xpr
+# Log file: D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/vivado.log
+# Journal file: D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project {D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.xpr}IINFO: [Project 1-313] Project file moved from 'D:/MP V1 no data hazards.xpr/iiti_soc/.Xil/Vivado-37644-Dinesh/PrjAr/_X_' since last save.Scanning sources...
+FFinished scanning sourcesIINFO: [IP_Flow 19-234] Refreshing IP repositoriesIexit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 27 20:35:12 2024...
+9-2313] Loaded Vivado IP repository 'D:/VIVadoFiles/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/cncn.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/cncn.v}}
+export_ip_user_files -of_objects  [get_files {{D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instr_register.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instr_register.v}}
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/imm_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruc_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruc_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruction_splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CCT
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module PC_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/VIVadoFiles/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5ae7e4f23ec74feaaf10b1c246db64ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_bench_behav xil_defaultlib.test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <flagreg> not found while processing module instance <F> [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU.v:12]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close [ open {D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/flagreg.v} w ]
+add_files {{D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/flagreg.v}}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: test_bench
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 816.477 ; gain = 63.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'test_bench' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/test_bench.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CCT' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/pc.v:6]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/pc.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/pc.v:21]
+INFO: [Synth 8-6157] synthesizing module 'PC_addr' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/pc.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'PC_addr' (2#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/pc.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'CCT' (3#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/pc.v:6]
+INFO: [Synth 8-6157] synthesizing module 'instruc_mem' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruc_mem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'instruc_mem' (4#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruc_mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'instruction_splitter' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruction_splitter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_splitter' (5#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruction_splitter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/control_unit.v:3]
+	Parameter FETCH bound to: 3'b000 
+	Parameter DECODE bound to: 3'b001 
+	Parameter EXECUTE bound to: 3'b010 
+	Parameter MEMORY bound to: 3'b011 
+	Parameter WRITEBACK bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (6#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/control_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'registerFile' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'registerFile' (7#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6157] synthesizing module 'imm_data' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/imm_data.v:3]
+INFO: [Synth 8-226] default block is never used [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/imm_data.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'imm_data' (8#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/imm_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU_control' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU_control.v:3]
+INFO: [Synth 8-226] default block is never used [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU_control.v:10]
+INFO: [Synth 8-226] default block is never used [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU_control.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_control' (9#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flagreg' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/flagreg.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ovrflw' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/flagreg.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'ovrflw' (10#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/flagreg.v:66]
+WARNING: [Synth 8-6104] Input port 'overflow' has an internal driver [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/flagreg.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'flagreg' (11#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/flagreg.v:24]
+WARNING: [Synth 8-3848] Net overflow in module/entity ALU does not have driver. [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (12#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (13#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/data_mem.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (14#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/data_mem.v:2]
+WARNING: [Synth 8-85] always block has no event control specified [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/test_bench.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'test_bench' (15#1) [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/test_bench.v:1]
+WARNING: [Synth 8-3331] design data_mem has unconnected port address[7]
+WARNING: [Synth 8-3331] design data_mem has unconnected port address[6]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port A[6]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port A[5]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port A[4]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port A[3]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port A[2]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port A[1]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port A[0]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port B[6]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port B[5]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port B[4]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port B[3]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port B[2]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port B[1]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port B[0]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port R[6]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port R[5]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port R[4]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port R[3]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port R[2]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port R[1]
+WARNING: [Synth 8-3331] design ovrflw has unconnected port R[0]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[31]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[30]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[29]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[28]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[19]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[18]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[17]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[16]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design imm_data has unconnected port instruction[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 872.730 ; gain = 120.074
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin F:overflow to constant 0 [D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU.v:12]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 872.730 ; gain = 120.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 872.730 ; gain = 120.074
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1169.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1276.984 ; gain = 524.328
+37 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1276.984 ; gain = 524.328
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/flagreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flagreg
+INFO: [VRFC 10-311] analyzing module ovrflw
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/imm_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruc_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruc_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruction_splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CCT
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module PC_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/VIVadoFiles/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5ae7e4f23ec74feaaf10b1c246db64ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_bench_behav xil_defaultlib.test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_addr
+Compiling module xil_defaultlib.CCT
+Compiling module xil_defaultlib.instruc_mem
+Compiling module xil_defaultlib.instruction_splitter
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.imm_data
+Compiling module xil_defaultlib.ALU_control
+Compiling module xil_defaultlib.ovrflw
+Compiling module xil_defaultlib.flagreg
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_bench_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/IITI -notrace
+couldn't read file "D:/IITI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 27 20:42:34 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_bench_behav -key {Behavioral:sim_1:Functional:test_bench} -tclbatch {test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+$finish called at time : 1515 ns : File "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/test_bench.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1292.586 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/imports/new/ALU_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/flagreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flagreg
+INFO: [VRFC 10-311] analyzing module ovrflw
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/imm_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruc_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruc_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/instruction_splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CCT
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module PC_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/VIVadoFiles/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5ae7e4f23ec74feaaf10b1c246db64ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_bench_behav xil_defaultlib.test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_addr
+Compiling module xil_defaultlib.CCT
+Compiling module xil_defaultlib.instruc_mem
+Compiling module xil_defaultlib.instruction_splitter
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.imm_data
+Compiling module xil_defaultlib.ALU_control
+Compiling module xil_defaultlib.ovrflw
+Compiling module xil_defaultlib.flagreg
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+$finish called at time : 1515 ns : File "D:/IITI SOc/non-pipelined microprocessor code.xpr/iiti_soc/iiti_soc.srcs/sources_1/new/test_bench.v" Line 72
