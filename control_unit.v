@@ -62,7 +62,7 @@ module control_unit(
       Aluop1 = 2'b11;
       branch1=1'b0;      
     end
-    else if (opcode1 == 7'b1100011) // I-Type Arithmetic Instruction
+    else if (opcode1 == 7'b1100011) // B-Type Arithmetic Instruction
     begin
       memread1 = 1'b0;
       memtoreg1 = 1'bx;
