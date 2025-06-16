@@ -1,52 +1,64 @@
-`timescale 1ns / 1ps
+module EX_MEM(
+  input clk,reset,
+  input [7:0] Result_in_alu_1,
+  input [7:0] Result_in_alu_2,
+  input [7:0] writedata_in_1, //2 bit mux2by1 output for load operation ig
+  input [7:0] writedata_in_2,
+  input [4:0] Rd_in_1, //IDEX output address of the destnation reg
+  input [4:0] Rd_in_2,
+  input memread_in1,memtoreg_in1,memwrite_in1,regwrite_in1,
+  input memread_in2,memtoreg_in2,memwrite_in2,regwrite_in2, //IDEXX outputs control inputs 
 
-module ALU_control(funct3,funct7,Op,ALUOp);
-    input [2:0] funct3;
-    input [6:0] funct7;
-    input [1:0] Op;
-    output reg [4:0] ALUOp;
-    
-   always @(*) begin
-        case (Op)
-            2'b00: ALUOp = 5'b00000; // Add (for addresses)
-            2'b01: ALUOp = 5'b00001; // Subtract (for comparison)
-            2'b10: begin
-                   case ({funct7, funct3})
-                    10'b0000000000: ALUOp = 5'b00000; // Addition
-                    10'b0100000000: ALUOp = 5'b00001; // Subtraction
-                    10'b0000000111: ALUOp = 5'b00100; // AND
-                    10'b0000000110: ALUOp = 5'b00101; // OR
-                    10'b0000000100: ALUOp = 5'b00110; // XOR
-                    10'b0000000001: ALUOp = 5'b00111; // Logical Left Shift (LLS)
-                    10'b0000000101: ALUOp = 5'b01000; // Logical Right Shift (LRS)
-                    10'b0000000011: ALUOp = 5'b01010; // Set Less Than (SLT)
-                    10'b0000000010: ALUOp = 5'b01011; // Set Less Than (SLT) signed
-                    10'b0000001000: ALUOp = 5'b01100; // signed Multiply LSB
-                    10'b0000001001: ALUOp = 5'b01101; // signed Multiply MSB
-                    10'b0000001010: ALUOp = 5'b10100; // Signed Multiply Unsigned Operand
-                    10'b0000001011: ALUOp = 5'b10001; // Unsigned Multiply Signed Operand
-                    10'b0000001100: ALUOp = 5'b10010; // Signed Division
-                    10'b0000001101: ALUOp = 5'b01110; // Unsigned Division
-                    10'b0000001110: ALUOp = 5'b10011; // Signed Remainder
-                    10'b0000001111: ALUOp = 5'b01111; // Unsigned Remainder
-                    10'b0100000101: ALUOp = 5'b01001; // Unsigned Remainder
-                   default: ALUOp = 5'b11111; // Default
-                endcase
-            end
-            2'b11: begin
-                case (funct3)
-                    3'b000: ALUOp = 5'b00000; // Immediate Addition
-                    3'b111: ALUOp = 5'b00100; // Immediate AND
-                    3'b110: ALUOp = 5'b00101; // Immediate OR
-                    3'b100: ALUOp = 5'b00110; // Immediate XOR
-                    3'b001: ALUOp = 5'b00111; // Immediate Logical Left Shift
-                    3'b101: ALUOp = 5'b01000; // Immediate Logical Right Shift
-                    3'b011: ALUOp = 5'b01010; // Immediate Set Less Than
-                    3'b010: ALUOp = 5'b01011; // Immediate Set Less Than signed
-                   default: ALUOp = 5'b11111; // Default 
-                endcase
-            end
-           default: ALUOp = 5'b11111; // Default 
-        endcase
+  output reg [7:0] result_out_alu_1,
+  output reg [7:0] writedata_out_1,
+  output reg [4:0]rd_1,
+  output reg Memread1,Memtoreg1, Memwrite1, Regwrite1,
+   output reg [7:0] result_out_alu_2,
+  output reg [7:0] writedata_out_2,
+  output reg [4:0]rd_2,
+  output reg Memread2,Memtoreg2, Memwrite2, Regwrite2);
+  
+  always @ (posedge clk)
+    begin
+      if (reset == 1'b1)
+        begin
+        
+          result_out_alu_1 <= 8'b0;
+          writedata_out_1 <= 8'b0;
+          rd_1 <= 5'b0;
+          
+          Memread1 <= 1'b0;
+          Memtoreg1 <=1'b0;
+          Memwrite1 <= 1'b0;
+          Regwrite1 <= 1'b0;
+          result_out_alu_2 <= 8'b0;
+          writedata_out_2 <= 8'b0;
+          rd_2 <= 5'b0;
+          
+          Memread2 <= 1'b0;
+          Memtoreg2 <=1'b0;
+          Memwrite2 <= 1'b0;
+          Regwrite2 <= 1'b0;
+          
+        end
+      else
+        begin
+         
+          result_out_alu_1 <= Result_in_alu_1;
+          writedata_out_1 <= writedata_in_1;
+          rd_1 <= Rd_in_1;
+          Memread1 <= memread_in1;
+          Memtoreg1 <= memtoreg_in1;
+          Memwrite1 <= memwrite_in1;
+          Regwrite1 <= regwrite_in1;
+                   result_out_alu_2 <= Result_in_alu_2;
+          writedata_out_2 <= writedata_in_2;
+          rd_2 <= Rd_in_2;
+          Memread2 <= memread_in2;
+          Memtoreg2 <= memtoreg_in2;
+          Memwrite2 <= memwrite_in2;
+          Regwrite2 <= regwrite_in2;
+          
+        end
     end
 endmodule
